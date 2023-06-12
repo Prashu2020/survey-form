@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Survey</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="bg">
+  <div class="container">
+    <div id="welcome-screen" class="screen">
+      <h1>Welcome to Our Shop Survey</h1>
+      <button id="start-button">Start</button>
+    </div>
+    <div id="survey-screen" class="screen hidden">
+      <h2 id="question-number"></h2>
+      <h3 id="question"></h3>
+      <div id="rating-container" class="hidden">
+        <span>Rate:</span>
+        <input type="number" id="rating-input" min="1" max="5">
+      </div>
+      <div id="text-container" class="hidden">
+        <textarea id="text-input" rows="4" cols="50" placeholder="Enter your answer"></textarea>
+      </div>
+      <div>
+        <button id="prev-button" disabled>Previous</button>
+        <button id="next-button">Next</button>
+        <button id="skip-button">Skip</button>
+      </div>
+    </div>
+    <div id="confirmation-dialog" class="screen hidden">
+      <h2>Confirmation</h2>
+      <p>Are you sure you want to submit the survey?</p>
+      <button id="confirm-button">Submit</button>
+      <button id="cancel-button">Cancel</button>
+    </div>
+    <div id="thankyou-screen" class="screen hidden">
+      <h1>Thank you for your time!</h1>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

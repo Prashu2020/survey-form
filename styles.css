@@ -1,0 +1,31 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+.bg {
+  background-color: #33C1FF;
+}
+#next-button {background-color: #FF33F9;} /* Pink */
+#prev-button {background-color: #334FFF;} /* Blue */
+#confirm-button {background-color: green;} /* Pink */
+#cancel-button {background-color: red;} /* Blue */
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin: 10px;
+  font-size: 16px;
+}
+
